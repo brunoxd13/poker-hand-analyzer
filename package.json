@@ -1,0 +1,19 @@
+{
+  "name": "poker-hand-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoxd13/poker-hand-analyzer.git"
+  },
+  "author": "Bruno Russi Lautenschlager",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunoxd13/poker-hand-analyzer/issues"
+  },
+  "homepage": "https://github.com/brunoxd13/poker-hand-analyzer#readme"
+}
