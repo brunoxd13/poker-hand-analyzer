@@ -1,12 +1,8 @@
-const express = require("express");
-
-const PORT = 3000;
-const HOST = "0.0.0.0";
-
-const app = express();
+const app = require("./AppConfig");
+const UserRouter = require("./routes/PokerRouter");
 
 app.get("/", (req, res) => {
   res.send("Server on");
 });
 
-app.listen(PORT, HOST);
+app.use("/poker", UserRouter);
