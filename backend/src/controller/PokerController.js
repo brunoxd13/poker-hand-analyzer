@@ -3,7 +3,7 @@ const pokerService = require("../service/PokerService");
 
 class PokerController {
   proccesHand(hand1, hand2) {
-    const handWinner = pokerService.getHandWinner(hand1, hand2);
+    const handWinner = pokerService.getHandWinner(hand1, hand2) + 1;
     return { handWinner };
   }
 }
