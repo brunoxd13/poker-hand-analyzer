@@ -1,3 +1,7 @@
-exports.normalizeDara = function(hand) {
-  return hand.match(/.{1,2}/g).join(" ");
+function removeSpaces(str) {
+  return str.replace(/\s+/g, "");
+}
+exports.normalizeDara = function(str) {
+  str = removeSpaces(str);
+  return str.match(/.{1,2}/g);
 };

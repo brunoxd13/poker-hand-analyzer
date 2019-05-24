@@ -1,10 +1,20 @@
-const poker = require("poker-hands");
+const poker = require("pokersolver").Hand;
 
 class PokerService {
   getHandWinner(hand1, hand2) {
-    var result = poker.judgeWinner([hand1, hand2]);
-    console.log(result);
-    return result;
+    hand1 = poker.solve(hand1);
+    hand2 = poker.solve(hand2);
+
+    const winner = poker.winners([hand1, hand2]);
+
+    console.log(winner);
+
+    return winner === hand1 ? 1 : 2;
+  }
+
+  getDescriptionHand(hand) {
+    hand = poker.solve(hand);
+    return hand.descr;
   }
 }
 
