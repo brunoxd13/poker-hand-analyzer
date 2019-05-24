@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "frontend": "cd ./frontend && yarn start",
+    "backend": "cd ./backend && yarn start",
+    "start": "concurrently \"yarn frontend\" \"yarn backend\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/brunoxd13/poker-hand-analyzer/issues"
   },
-  "homepage": "https://github.com/brunoxd13/poker-hand-analyzer#readme"
+  "homepage": "https://github.com/brunoxd13/poker-hand-analyzer#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
 }
