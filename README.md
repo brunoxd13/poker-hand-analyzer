@@ -1,7 +1,7 @@
 # Poker Hand Slover
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/brunoxd13/poker-hand-analyzer/master/frontend/src/assets/logo.svg" alt="logo" width="100" />
+  <img src="https://raw.githubusercontent.com/brunoxd13/poker-hand-analyzer/master/frontend/src/assets/logo.png" alt="logo" width="100" />
 </p>
 <br>
 
