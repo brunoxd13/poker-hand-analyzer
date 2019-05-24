@@ -14,6 +14,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.0",
     "nodemon": "^1.19.0",
-    "poker-hands": "^1.0.2"
+    "pokersolver": "^2.1.3"
   }
 }
