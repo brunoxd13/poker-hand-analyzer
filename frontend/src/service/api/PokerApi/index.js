@@ -5,12 +5,11 @@ const headers = {
   "Content-Type": "application/json"
 };
 
-export const checkHand = (hand1, hand2) => {
-  console.log("batata");
-  return (`${api}/check-hand`,
-  {
+export const checkHand = (hand1, hand2) =>
+  fetch(`${api}/check-hand`, {
     method: "POST",
     headers: headers,
     body: JSON.stringify({ hand1, hand2 })
-  }).then(res => res.json());
-};
+  })
+    .then(res => res.json())
+    .then(data => data);

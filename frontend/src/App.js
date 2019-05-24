@@ -10,7 +10,7 @@ const MainContainer = styled.div`
 
 const App = () => {
   const handleSubmit = values => {
-    Api.checkHand(...values).then(result => {
+    Api.checkHand(values.hand1, values.hand2).then(result => {
       console.log(result);
     });
   };
