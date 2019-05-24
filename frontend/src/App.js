@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+
 import logoImg from "./assets/logo.svg";
 
 import PokerForm from "./components/PokerForm";
@@ -17,9 +18,11 @@ const Logo = styled.img`
 `;
 
 const App = () => {
+  const [handWinner, setHandWinner] = useState(0);
+
   const handleSubmit = values => {
     Api.checkHand(values.hand1, values.hand2).then(result => {
-      console.log(result);
+      setHandWinner(result.handWinner);
     });
   };
 
@@ -27,6 +30,7 @@ const App = () => {
     <MainContainer>
       <Logo src={logoImg} />
       <PokerForm handleSubmit={handleSubmit} />
+      {handWinner > 0 && `The hand winner is: ${handWinner}`}
     </MainContainer>
   );
 };
