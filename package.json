@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install-frontend-dependencies": "cd ./frontend && yarn install",
+    "install-backend-dependencies": "cd ./backend && yarn install",
+    "install-dependencies": "yarn install-frontend-dependencies && yarn install-backend-dependencies && yarn install",
     "frontend": "cd ./frontend && yarn start",
     "backend": "cd ./backend && yarn start",
     "start": "concurrently \"yarn frontend\" \"yarn backend\""
