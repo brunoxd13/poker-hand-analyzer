@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import logoImg from "./assets/logo.svg";
+import logoImg from "./assets/logo.png";
 
 import PokerForm from "./components/PokerForm";
 import PokerResult from "./components/PokerResult";
